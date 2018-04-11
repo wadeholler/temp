@@ -7,4 +7,6 @@
       yum:
         name: httpd
         state: installed
+    - name: command to yum clean all
+      command: yum -y clean all
     
