@@ -1,6 +1,10 @@
 ---
 - hosts: all
   tasks:
-    - name:
+    - name: touch a file
       command: touch /tmp/ansible_ran
+    - name: install httpd
+      yum:
+        name: httpd
+        state: installed
     
