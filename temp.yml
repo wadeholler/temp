@@ -1,4 +1,6 @@
+---
 - hosts: all
   tasks:
-    command: touch /tmp/ansible_ran
+    - name:
+      command: touch /tmp/ansible_ran
     
